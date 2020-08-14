@@ -1,0 +1,49 @@
+{
+  "name": "semanticrelease-typo3ext-config",
+  "version": "1.0.0",
+  "description": "semanticrelease config for a TYPO3 extension using develop/release branches and TYPO3 style commit messages",
+  "main": "index.js",
+  "scripts": {
+    "release": "npm version minor && npm publish --access public"
+  },
+  "keywords": [
+    "typo3",
+    "preset"
+  ],
+  "author": "Peter Schuler",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "license": "ISC",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "conventional-changelog-core": "^4.1.4",
+    "git-dummy-commit": "^1.3.0",
+    "mocha": "^8.1.1",
+    "shelljs": "^0.8.3",
+    "through2": "^4.0.2"
+  },
+  "dependencies": {
+    "semantic-release": "^17.0.3",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/gitlab": "^6.0.2",
+    "conventional-changelog-typo3": "^1.1.0",
+    "q": "^1.5.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:jpmschuler/semanticrelease-typo3ext-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jpmschuler/semanticrelease-typo3ext-config/issues"
+  },
+  "homepage": "https://github.com/jpmschuler/semanticrelease-typo3ext-config#readme"
+}
