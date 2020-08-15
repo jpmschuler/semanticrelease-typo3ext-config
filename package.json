@@ -16,7 +16,8 @@
   },
   "license": "ISC",
   "files": [
-    "index.js"
+    "index.js",
+    "prepare-semantic-release-slim.sh"
   ],
   "devDependencies": {
     "chai": "^4.2.0",
