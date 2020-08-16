@@ -20,7 +20,7 @@ npm run version:set ${nextReleaseVersion}
 git add .
 echo "am on version $(node -pe "require('./package.json').version")"
 git status
-echo "commiting changes"  
+echo "commiting changes"
 git commit -m "[TASK] Releasing ${CI_PROJECT_NAME} version ${nextReleaseVersion}" -m "" -m "${nextReleaseChangelog}"
 git checkout release
 git reset --hard
