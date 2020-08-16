@@ -9,7 +9,7 @@ module.exports = {
     "prepare": [
         {
             "path": "@semantic-release/exec",
-            "cmd": "node_modules/semanticrelease-typo3ext-config/prepare-semantic-release-slim.sh"
+            "cmd": "node_modules/semanticrelease-typo3ext-config/prepare-semantic-release-slim.sh \"${nextRelease.version}\" \"${nextRelease.notes}\""
         }
     ],
     "success": "",
