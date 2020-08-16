@@ -10,11 +10,17 @@ if git rev-parse "${nextReleaseVersion}" >/dev/null 2>&1; then
   exit 1
 fi
 
+
+echo "trying to release a new version $1 - will use current branch to create a new release:"
 git branch currentrelease
 git checkout currentrelease
 
+echo "am on version $(node -pe "require('./package.json').version"), will now update version files"
 npm run version:set ${nextReleaseVersion}
 git add .
+echo "am on version $(node -pe "require('./package.json').version")"
+git status
+echo "commiting changes"  
 git commit -m "[TASK] Releasing ${CI_PROJECT_NAME} version ${nextReleaseVersion}" -m "" -m "${nextReleaseChangelog}"
 git checkout release
 git reset --hard
