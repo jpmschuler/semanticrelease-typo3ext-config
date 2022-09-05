@@ -19,21 +19,14 @@
     "index.js",
     "prepare-semantic-release-slim.sh"
   ],
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "git-dummy-commit": "^1.3.0",
-    "mocha": "^8.1.1",
-    "shelljs": "^0.8.3",
-    "through2": "^4.0.2"
-  },
   "dependencies": {
-    "semantic-release": "^17.0.3",
-    "@semantic-release/commit-analyzer": "^8.0.1",
-    "@semantic-release/exec": "^5.0.0",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/gitlab": "^6.0.2",
-    "conventional-changelog-typo3": "^1.1.0",
-    "conventional-changelog-core": "^4.1.4",
+    "semantic-release": "^19.0.5",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^9.4.1",
+    "conventional-changelog-typo3": "^1.3.0",
+    "conventional-changelog-core": "^4.2.4",
     "q": "^1.5.1"
   },
   "directories": {
