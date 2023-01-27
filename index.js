@@ -16,7 +16,6 @@ module.exports = {
     "fail": "",
     "publish": [
         [
-            "@semantic-release/gitlab",
             {
                 "assets": [
                     {
