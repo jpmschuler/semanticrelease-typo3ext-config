@@ -1,6 +1,6 @@
 {
   "name": "semanticrelease-typo3ext-config",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "semanticrelease config for a TYPO3 extension using develop/release branches and TYPO3 style commit messages",
   "main": "index.js",
   "scripts": {
