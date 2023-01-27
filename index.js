@@ -14,18 +14,6 @@ module.exports = {
     ],
     "success": "",
     "fail": "",
-    "publish": [
-        [
-            {
-                "assets": [
-                    {
-                        "path": ".dist/*",
-                        "label": "Build result"
-                    }
-                ]
-            }
-        ]
-    ],
     "analyzeCommits": {
         "preset": "typo3",
         "releaseRules": [
