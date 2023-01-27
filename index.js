@@ -14,6 +14,19 @@ module.exports = {
     ],
     "success": "",
     "fail": "",
+    "publish": [
+        [
+            "@semantic-release/gitlab",
+            {
+                "assets": [
+                    {
+                        "path": ".dist/*",
+                        "label": "Build result"
+                    }
+                ]
+            }
+        ]
+    ],
     "analyzeCommits": {
         "preset": "typo3",
         "releaseRules": [
